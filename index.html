@@ -26,7 +26,7 @@
                     <div><img src="images/triangle.png" alt="" class="mx-auto"></div>
                     <div>
                         <h4 class="text-lg font-semibold mt-1">Triangle</h4>
-                        <p>Area A()=0.5 x b x h</p>
+                        <p>Area (A)=0.5 x b x h</p>
                         <div class="flex items-center mt-2 mb-3">
                             <input id="triangleInputB" class="mx-2 rounded-md w-6/12 px-1" type="text" placeholder="b">
                             <p class="mr-2">cm</p>
@@ -44,7 +44,7 @@
                     <div><img src="images/rectangle.png" alt="" class="mx-auto"></div>
                     <div>
                         <h4 class="text-lg font-semibold mt-1">Rectangle</h4>
-                        <p>Area A()=W x I</p>
+                        <p>Area (A)=W x I</p>
                         <div class="flex items-center mt-2 mb-3">
                             <input id="rectangleInputW" class="mx-2 rounded-md w-6/12 px-1" type="text" placeholder="W">
                             <p class="mr-2">cm</p>
@@ -62,7 +62,7 @@
                     <div><img src="images/parallelogram.png" alt="" class="mx-auto"></div>
                     <div>
                         <h4 class="text-lg font-semibold mt-1">Parallelogram</h4>
-                        <p>Area A()=b x h</p>
+                        <p>Area (A)=b x h</p>
                         <p>b=<span id="parallelogramB">10</span>cm, h=<span id="parallelogramH">12</span>cm</p>
                         <div class="flex items-center mt-2 mb-3">
                         </div>
@@ -76,7 +76,7 @@
                     <div><img src="images/pentagon.png" alt="" class="mx-auto"></div>
                     <div>
                         <h4 class="text-lg font-semibold mt-1">Pentagon</h4>
-                        <p>Area A()=P x B</p>
+                        <p>Area (A)=P x B</p>
                         <p>P=<span id="PentagonP">10</span>cm, B=<span id="PentagonB">12</span>cm</p>
                         <div class="flex items-center mt-2 mb-3">
                         </div>
@@ -91,7 +91,7 @@
                     <div><img src="images/rhombus.png" alt="" class="mx-auto"></div>
                     <div>
                         <h4 class="text-lg font-semibold mt-1">Rhombus</h4>
-                        <p>Area A()=0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <p>Area (A)=0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <p>d<sub>1</sub>=<span id="rhombusD1">16</span>cm, d<sub>2</sub>=<span id="rhombusD2">8</span>cm
                         </p>
 
@@ -99,18 +99,13 @@
                     <button id="rhombusBtn"
                         class="bg-sky-500 text-lg font-bold px-6 py-1 rounded-lg w-4/5">Calculate</button>
                 </div>
-                <!-- ellipse -->
+                <!-- Ellipse -->
                 <div class="bg-slate-300 rounded-lg p-4 text-center">
                     <div><img src="images/ellipse.png" alt="" class="mx-auto"></div>
                     <div>
                         <h4 class="text-lg font-semibold mt-1">Ellipse</h4>
-                        <p>Area A()=0.5 x b x h</p>
-                        <div class="flex items-center mt-2 mb-3">
-                            <input id="triangleInputB" class="mx-2 rounded-md w-6/12 px-1" type="text" placeholder="b">
-                            <p class="mr-2">cm</p>
-                            <input id="triangleInputH" class="mr-2 rounded-md w-6/12  px-1" type="text" placeholder="h">
-                            <p class="inline-block">cm</p>
-                        </div>
+                        <p>Area (A)=&Phi;ab</p>
+                        <p>a=<span id="ellipseA">10</span>cm, b=<span id="ellipseB">4</span>cm</p>
 
                     </div>
                     <button id="ellipseBtn"
@@ -161,10 +156,10 @@
                         <button class="ms-4 inline-block font-semibold bg-cyan-300 px-3 py-2 rounded-md">Convert to
                             m<sup>2</sup></button>
                     </div>
-                    <!-- Parallelogram -->
-                    <div id="result-Form-Parallelogram" class=" px-2 py-5 m-2 flex items-center justify-center hidden">
-                        <h4 class="text-lg font-semibold">Parallelogram:
-                            <span id="resultParallelogram">00 </span>cm<sup>2</sup>
+                    <!-- Ellipse -->
+                    <div id="result-Form-Ellipse" class=" px-2 py-5 m-2 flex items-center justify-center hidden">
+                        <h4 class="text-lg font-semibold">Ellipse:
+                            <span id="resultEllipse">00 </span>cm<sup>2</sup>
                         </h4>
                         <button class="ms-4 inline-block font-semibold bg-cyan-300 px-3 py-2 rounded-md">Convert to
                             m<sup>2</sup></button>

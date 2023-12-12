@@ -18,3 +18,7 @@ document.getElementById('rhombusBtn').addEventListener('click',function(){
     calculateRhombus();
     formCalling('result-Form-Rhombus');
 })
+document.getElementById('ellipseBtn').addEventListener('click',function(){
+    calculateEllipse();
+    formCalling("result-Form-Ellipse") ;
+})

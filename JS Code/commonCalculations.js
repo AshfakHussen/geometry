@@ -7,7 +7,7 @@ function getTheInput(element) {
     return infoInNumber;
 }
 
-///Common calling the from for display
+///Common: toggling the display field
 function formCalling(selectForm) {
     const form = document.getElementById(selectForm);
     form.classList.toggle('hidden');
@@ -61,6 +61,7 @@ function displayRectangle() {
 function getInnerText(element){
     const value=document.getElementById(element)
     const valueString=value.innerText;
+    console.log(valueString);
     const valueParseFloat=parseFloat(valueString);
     return valueParseFloat;
 }
@@ -90,6 +91,16 @@ function calculateRhombus(){
     const value3=0.5;
     const area=parseFloat(value1*value2*value3.toFixed(2));
     const display=document.getElementById('resultRhombus');
+    display.innerText=area;
+    return display;
+}
+///ELLIPSE
+function calculateEllipse(){
+    const value1=getInnerText('ellipseA');
+    const value2=getInnerText('ellipseB');
+    const value3=3.1;
+    const area=parseFloat(value1*value2*value3.toFixed(2));
+    const display=document.getElementById('resultEllipse');
     display.innerText=area;
     return display;
 }
